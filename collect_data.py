@@ -13,7 +13,7 @@ face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_front
 user_id = input('\n Enter User ID (numeric) and press <Enter>: ')
 count = 0
 
-print("\n [INFO] Starting face capture. Please look at the camera...")
+print("\n Starting face capture. Please look at the camera...")
 
 while True:
     ret, frame = cap.read()
@@ -38,6 +38,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q') or count >= 100:
         break
 
-print("\n [INFO] Successfully captured and saved images.")
+print("\n Successfully captured and saved images.")
 cap.release()
 cv2.destroyAllWindows()
