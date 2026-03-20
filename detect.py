@@ -7,7 +7,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 # 2. Initialize the camera (0 is the default ID for the built-in webcam)
 cap = cv2.VideoCapture(0)
 
-print("\n [INFO] Starting face detection test. Press 'q' to exit...")
+print("\n Starting face detection test. Press 'q' to exit...")
 
 while True:
     # Capture frame-by-frame
@@ -39,6 +39,6 @@ while True:
         break
 
 # Cleanup: release the camera and close windows
-print("\n [INFO] Stopping system...")
+print("\n  Stopping system...")
 cap.release()
 cv2.destroyAllWindows()
