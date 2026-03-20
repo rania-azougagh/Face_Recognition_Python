@@ -28,11 +28,11 @@ def get_images_and_labels(path):
 
     return face_samples, ids
 
-print("\n [INFO] Training the model. Please wait...")
+print("\n  Training the model. Please wait...")
 faces, ids = get_images_and_labels(path)
 recognizer.train(faces, np.array(ids))
 
 # Save the trained model to a file
 recognizer.write('trainer.yml') 
 
-print(f"\n [INFO] Training complete. {len(np.unique(ids))} faces recognized.")
+print(f"\n  Training complete. {len(np.unique(ids))} faces recognized.")
