@@ -11,7 +11,7 @@ names = ['None', 'Rania', 'User_2']
 
 cap = cv2.VideoCapture(0)
 
-print("\n [INFO] System is live. Press 'q' to exit.")
+print("\n System is live. Press 'q' to exit.")
 
 while True:
     ret, frame = cap.read()
